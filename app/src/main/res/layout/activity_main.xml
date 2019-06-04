@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/colorIconText"
+        android:textSize="@dimen/headingSize" />
+
+
+    <TextView
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_text"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:text="@string/email"
+        android:textColor="@color/colorIconText"
+        android:textSize="@dimen/highlightTextSize" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_text"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:background="@drawable/ic_bottom_line"
+        android:hint="@string/your_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:nextFocusDown="@string/password"
+        android:paddingBottom="8dp"
+        android:textColorHint="@color/colorHintText"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:text="@string/password"
+        android:textColor="@color/colorIconText"
+        android:textSize="@dimen/highlightTextSize" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_text"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:background="@drawable/ic_bottom_line"
+        android:hint="@string/password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingBottom="8dp"
+        android:textColorHint="@color/colorHintText"
+        tools:ignore="Autofill" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:background="@drawable/ic_button_bg"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/login_with_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/facebook_login"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageButton
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/facebook"
+            android:layout_toLeftOf="@id/facebook"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/facebook_login"
+            android:src="@drawable/ic_google_plus" />
+
+
+        <ImageButton
+            android:id="@+id/linked_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/facebook"
+            android:layout_toRightOf="@id/facebook"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/facebook_login"
+            android:src="@drawable/ic_linkedin" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginBottom="@dimen/horizontal_margin"
+        android:background="@drawable/ic_secondary_button_bg"
+        android:text="@string/sign_up"
+        android:onClick="onSignUp"
+        android:textColor="@color/colorIconText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sign_up"
+        android:textAlignment="center"
+        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:text="@string/not_member"
+        android:textColor="@color/colorIconText"
+        android:textSize="@dimen/highlightTextSize" />
+
+
+
+</RelativeLayout>

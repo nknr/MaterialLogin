@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Material Login</string>
+    <string name="login">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="not_member">Not a member yet?</string>
+    <string name="with_us">Already with us</string>
+    <string name="register">Register</string>
+    <string name="your_email">Your email</string>
+    <string name="facebook_login">Facebook login</string>
+</resources>
