@@ -16,7 +16,6 @@
         android:textColor="@color/colorIconText"
         android:textSize="@dimen/headingSize" />
 
-
     <TextView
         android:id="@+id/email_text"
         android:layout_width="match_parent"
