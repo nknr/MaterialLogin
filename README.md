@@ -1,4 +1,4 @@
 # MaterialLogin
 
-![Sign up](../master/MaterialLogin/app/screenshot/SignUp.png)
-![Sign in](../master/MaterialLogin/app/screenshot/login.png)
+![Sign up](../master/app/screenshot/SignUp.PNG)
+![Sign in](../master/app/screenshot/login.PNG)
